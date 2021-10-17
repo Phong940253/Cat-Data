@@ -59,7 +59,7 @@ def convert_annotation(dir_path, output_path, image_path):
 
 for dir_path in dirs:
     full_dir_path = './' + dir_path
-    output_path = full_dir_path + '/yolo/'
+    output_path = full_dir_path + '/labels/'
 
     if not os.path.exists(output_path):
         os.makedirs(output_path)
