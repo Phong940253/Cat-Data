@@ -1,1 +1,38 @@
-<annotation><filename>CAT_01_00000206_009.jpg</filename><size><width>500</width><height>375</height><depth>3</depth></size><object><name>cat</name><bndbox><xmin>189</xmin><ymin>88</ymin><xmax>249</xmax><ymax>150</ymax></bndbox></object></annotation>
+<annotation>
+	<folder>images</folder>
+	<filename>CAT_01_00000206_009.jpg</filename>
+	<path>F:\New-forder\voc\train\images\CAT_01_00000206_009.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>375</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>cat</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>189</xmin>
+			<ymin>88</ymin>
+			<xmax>249</xmax>
+			<ymax>150</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>cat</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>208</xmin>
+			<ymin>116</ymin>
+			<xmax>265</xmax>
+			<ymax>179</ymax>
+		</bndbox>
+	</object>
+</annotation>
