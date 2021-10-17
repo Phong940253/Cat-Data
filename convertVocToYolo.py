@@ -35,7 +35,7 @@ def convert_annotation(dir_path, output_path, image_path):
     basename = os.path.basename(image_path)
     basename_no_ext = os.path.splitext(basename)[0]
 
-    in_file = open(dir_path + '/' + basename_no_ext + '.xml')
+    in_file = open(dir_path + '/anns/' + basename_no_ext + '.xml')
     out_file = open(output_path + basename_no_ext + '.txt', 'w')
     tree = ET.parse(in_file)
     root = tree.getroot()
@@ -44,9 +44,9 @@ def convert_annotation(dir_path, output_path, image_path):
     h = int(size.find('height').text)
 
     for obj in root.iter('object'):
-        difficult = obj.find('difficult').text
+        # difficult = obj.find('difficult').text
         cls = obj.find('name').text
-        if cls not in classes or int(difficult) == 1:
+        if cls not in classes == 1:
             continue
         cls_id = classes.index(cls)
         xmlbox = obj.find('bndbox')
@@ -66,7 +66,7 @@ for dir_path in dirs:
 
     image_paths = getImagesInDir(full_dir_path)
     list_file = open(full_dir_path + '.txt', 'w')
-    print(image_paths, full_dir_path)
+    # print(image_paths, full_dir_path)
 
     for image_path in image_paths:
         list_file.write(image_path + '\n')
